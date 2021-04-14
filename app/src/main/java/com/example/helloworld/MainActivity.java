@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
         TextView txtHello = findViewById(R.id.txtMessage);
         EditText edtTxtName = findViewById(R.id.editTextTextPersonName);
         String name = edtTxtName.getText().toString();
-        txtHello.setText("Hello, " + name);
+        int specialNumber = (int) (Math.random()*1000);
+        txtHello.setText("Hey, " + name + " your lucky number is " + specialNumber);
     }
 }
